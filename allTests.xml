@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="allTests" verbose="1">
+
+    <test name="Login test">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <!--                <methods>-->
+            <!--                    <include name="testLoginPageIsOpenedCorrectly"/>-->
+            <!--                    <include name="testUserCanNotLoginWithWrongCredentials"/>-->
+            <!--                    <include name="testUserCanLoginWithValidCredentials"/>-->
+            <!--                </methods>-->
+        </classes>
+    </test>
+
+    <test name="Add new contact">
+        <classes>
+            <class name="tests.CreateNewContactTest"/>
+            <!--                <methods>-->
+            <!--                    <include name="testUserCanEnterNewContactPage"/>-->
+            <!--                    <include name="testUserCanAddNewContact"/>-->
+            <!--                </methods>-->
+        </classes>
+    </test>
+
+    <test name="Edit contact">
+        <classes>
+            <class name="tests.EditContactTest"/>
+        </classes>
+    </test>
+
+    <test name="Delete contact">
+        <classes>
+            <class name="tests.DeleteContactTest"/>
+        </classes>
+    </test>
+
+
+</suite>
