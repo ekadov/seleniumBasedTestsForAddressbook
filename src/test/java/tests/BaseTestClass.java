@@ -33,7 +33,7 @@ public class BaseTestClass {
         if (!isTestStarted) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
-            new WebDriverWait(driver, Duration.ofSeconds(10));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             takeScreenshot = Boolean.parseBoolean(ConfProperties.getProperty("take_screenshot_on_fail"));
             isTestStarted = true;
         }
